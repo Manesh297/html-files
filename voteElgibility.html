@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <body>
+        <h1>voter Eligibility checker</h1>
+           <button onclick="checkvoter()">check Eligibility</button>
+           <div id="result`"></div>
+           <script>
+            function checkvoter(){
+                const name=prompt("enter your name:");
+                const age=prompt("enter your age:");
+                 if (name== null || age == null|| name.trim() === "" || isNaN(age)){
+                    alert("Invalid input.please try again.");
+                    return;
+                 }
+                 const ageNum=parseInt(age);
+                 const eligibility = ageNum>=18 ? "Eligibile to vote" : " Not Eligible"
+
+                 const table html =`
+                 <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>age</th>
+                        <th>Eligibility</th>
+                        </tr>
+                        <tr>
+                        <td>${name}</td>
+                        <td>${ageNum}</td>
+                    
+                    
+
+    
+                        }
